@@ -267,7 +267,7 @@ class SocketIOConnection {
             }
         }
 
-        if (!disconnected)
+        if (disconnected)
             return;
 
         mHandler.postDelayed(new Runnable() {
